@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile Legends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsivo.css">
+    <link rel="stylesheet" href="./reset.css">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./card-bg.jpg" alt="personagens">
+    </header>
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um personagem e conheça seu poder</h1>
+            <ul class="lista-de-personagens">
+
+                <li class="personagem" id="aurora" data-name="Aurora" data-description="Aurora é uma maga:
+                Cada vez que a habilidade é liberada, uma unidade de energia de gelo será adicionada ao herói, quando 4 unidades de energia de gelo forem coletadas, o próximo dano de habilidade congelará o alvo. Todas as habilidades podem causar dano mágico extra ao alvo congelado.                         
+                Aurora dispara uma pedra de gelo na direção do alvo, a pedra explode ao atingir a primeira unidade inimiga, causando 350(+200% do poder mágico total) de Dano Mágico a todos os inimigos na área de efeito e reduzindo a velocidade deles em 25% por 1.5s.                     
+                Aurora causa 450(+160 do poder mágico total) pontos de dano mágico no alvo e reduz a velocidade de movimento dele em 80% dura 1.5s.                        
+                Invoca uma pedra gelada gigante para bombardear um local designado, todos os heróis inimigos atingidos serão retardados e receberão Dano Mágico. Ao redor de inimigos do local alvo onde as terras rochosas também serão reduzidas e receberão Dano Mágico.">
+                    <img src="./card-aurora.jpg" alt="Personagem Aurora">
+                </li>
+
+                <li class="personagem" id="lylia" data-name="Lylia" data-description="Lylia é uma maga:               
+                Lylia libera uma onda de ataques à frente, causando 250 pontos de Dano Mágico aos inimigos no caminho e reduzindo a velocidade de movimento em 40%. Dura 1.5s. Gloom pega uma carona na Onda de Choque Mágica. Se Gloom tocar na Energia Sombria ele imediatamente irá detonar a energia.
+                Lylia condensa a Energia Sombria para a área designada, causando 100 pontos de Dano Mágico aos inimigos próximos e reduzindo a velocidade de movimento em 80%. Depois que Gloom devorar a Energia Sombria, ele detornará a energia e causará 250 pontos de Dano Mágico para os inimigos próximos. Cada vez que o Gloom se aprimorar, o dano causado pela Energia Sombria será aumentado em 30%. Stacks até 120%.     
+                Lylia imediatamente retorna à posição em que o Sapato Preto estava a 4s atrás e stacka o tempo máximo para usar Energia Sombria, aumentando sua velocidade de movimento em 10%. Dura 2s.">
+                    <img src="./card-lylia.jpg" alt="Personagem Lylia">
+                </li>
+                
+                <li class="personagem" id="nana" data-name="Nana" data-description="Nana é uma maga/suporte:
+                As bênçãos de Molina fazem de Nana imune a um dano mortal por 2s. Nesse curto período de tempo, Nana não morrerá, mas não poderá usar habilidades. Sua velocidade de movimento aumenta em 70% e ela recupera 10% do seu HP máximo. A passiva tem um cooldown de 120s.                
+                Nana lança um bumerangue mágico numa direção especificada. Cada vez que o bumerangue atinge um inimigo, ele causa 420 pontos de Dano Mágico e da slow de 40% por 1.5s. O primeiro inimigo atingido recebe dano total, o próximo recebe 20% a menos, até o mínimo de 60%.
+                Nana invoca Molina para uma área designada. Depois de um pequeno atraso, Molina trava em um herói inimigo e o persegue, transformando-o em um espírito de gato ao acertar, causando 375 pontos de Dano Mágico e dando slow de 70% por 1.5s. Reduz a Defesa Mágica do herói transformado em 25%.
+                Nana invoca Molina para uma área designada para atacar 3 vezes. Cada ataque causa 680 pontos de Dano Mágico aos inimigos na área e da slow de 50% por 2s. Se Molina atingir um inimigo duas vezes seguidas, esse inimigo ficará stunado por 1s.">
+                    <img src="./card-nana.jpg" alt="Personagem nana">
+                </li>
+
+                <li class="personagem" id="pharsa" data-name="Pharsa" data-description="Pharsa é uma maga:
+                De vez em quando, Verri entra no estado de Caça, durante o qual Pharsa causa 300 de Dano Mágico(+ 80% de Poder Total de Magia) e retarda os inimigos.
+                A Pharsa se torna uma névoa ao redor de Verri, sobrevoando terrenos por 5s. Ela deixa o estado uma vez sendo controlada pela multidão. Passivo: aumenta permanentemente o poder mágico em 30.
+                Libera energia mágica, causando 350 (+ 130% de Poder Total de Magia) de Dano Mágico a uma linha de inimigos.
+                Pharsa voa para o ar e, em seguida, lança um bombardeio em uma área de alvo, causando 500 (+ 160% de Poder Mágico Total) Dano Mágico em 13.">
+                    <img src="./card-pharsa.jpg" alt="Personagem Pharsa">
+                </li>
+
+                <li class="personagem" id="vexana" data-name="Vexana" data-description="Vexana é uma maga:
+                Adiciona uma magia oculta aos alvos que recebem dano do necromante, com duração de 5s. Enquanto o feitiço dura, o alvo explodirá com a morte, causando 320/600 (+ 50% de Magia Total) de dano mágico nas unidades adjacentes. Unidades que recebem dano de praga de bonecos também terão feitiços de necromancia lançados nelas.
+                Libera poder fantasmagórico em uma direção para frente, causando 280 (+ 100% de Magia Total) de dano mágico. O primeiro herói atingido perderá o controle e avançará para a necromante por 1s.
+                Evoca um poder de outro mundo para causar 550 de dano mágico (+ 250% de Magia Total) em um local especificado. 
+                Coloca uma maldição nos heróis inimigos que duram 5s, que causa 250 (+ 80% de Magia Total) de dano mágico e faz com que os alvos recebam 120 (+ 48% de Magia Total) de dano mágico por segundo. Enquanto reduz a recuperação da saúde em 100%. Se um alvo morrer enquanto estiver sob a maldição, o alvo ressuscitará e se tornará o fantoche da necromante, lutando pela necromante. Um fantoche ressuscitado herdará 70% dos atributos originais de pré-morte e continuamente causará dano de peste a alvos próximos, causando 8% do HP máximo do inimigo como dano mágico.">
+                    <img src="./card-vexana.jpg" alt="Personagem Vexana">
+                </li>      
+
+                <li class="personagem" id="odette" data-name="Odette" data-description="Odette é uma maga:
+                Depois de lançar uma skill, o próximo Ataque Básico ou Skill da Odette também lançará uma onda sonora que saltará entre os inimigos, causando 144-200(+5) pontos de Dano Mágico.
+                Odette concentra energia para invocar um cisne para atacar os inimigos, causando 500(+15) Dano Mágico e reduzindo a velocidade de movimento deles em 70%. Dura 2s.
+                Odette dispara uma bola de energia mágica para a frente, causando Dano Mágico aos inimigos causando um stun por 1s. Após a bola ter atingindo o seu alcance máximo ou acertar um alvo, duas bolas extras de energia irão se separar para os lados, causando 350(+8) pontos de Dano Mágico e stun por 1s.
+                Odette reúne energia e causa dano contínuo aos inimigos dentro da área. Causa 320(+12) pontos de Dano Mágico aos inimigos a cada 0.5s. Dura 5s. O campo também aumenta a velocidade de recuperação e o número de ressaltos do Ambiente do Lago. Reduz dano recebido em 60% enquanto ativo. Reduz a velocidade de movimento dos inimigos em 90%, que decai com o tempo. Dura 2s.">
+                    <img src="./card-odette.jpg" alt=" Personagem Odette">
+                </li>
+
+                <li class="personagem" id="layla" data-name="Layla" data-description="Layla é uma atiradora:
+                A arma maléfica passiva da personagem, é um dos seus ataques mais básicos, que oferece maior dano, se usado contra inimigos que estão mais distantes. Já a bomba maléfica, tem um custo de mana de 40 e funciona quando a Layla de Mobile Legends, dispara uma bomba de energia, causando muito dano desde o primeiro adversário atingido.
+                O projetil de vácuo, funciona quando a personagem dispara uma bala de energia, que oferece um dano de 170, tanto no alvo, como também nos outros inimigos que estiverem por perto.
+                Além disso, a habilidade também serve para diminuir a velocidade dos oponentes em até 60% por 2 segundos, sendo que, a eficácia desse ataque, pode ser maior de acordo com o nível que tiver atingido.">
+                    <img src="./card-layla.jpg" alt=" Personagem Layla">
+                </li>
+
+                <li class="personagem" id="lesley" data-name="Lesley" data-description="Lesley é uma atiradora de elite:
+                Atingir um inimigo com um ataque básico concede 5 de energia. Se Lesley não sofrer dano por 5 segundos, seu próximo ataque básico terá um alcance maior, 40% de chance de crítico e causa x1.3 de dano. Usar qualquer habilidade redefinirá a recarga de Tiro Letal . Cada ponto de penetração física obtido por Lesley será convertido em 1% de taxa crítica extra.
+                Lesley entra no estado de camuflar por 3 segundos, aumentando a velocidade de movimento em 30% e de ataque físico. Lidar ou sofrer danos acabará com o estado. Os inimigos podem detectar a camuflagem de Lesley através de distorções nos arredores.
+                Joga uma granada tática para frente, que explode em uma área em forma de leque na frente dela. causando (+ 50% de Ataque Físico Total) de Dano Físico aos inimigos e repelindo-os. Enquanto isso, Lesley recua um pouco. O uso dessa habilidade cancela instantaneamente o Ultimate Snipe e libera uma bala fatal.
+                Lesley bloqueia um herói inimigo e dispara 4 balas fatais cada uma, causando (+ 80% de ATK Físico Extra), mais 5% do HP ausente do alvo como Dano Físico . Cada bala que atingir um alvo restaurará 10 pontos de energia.">
+                    <img src="./card-lesley.jpg" alt=" Personagem Lesley">
+                </li>
+
+                <li class="personagem" id="miya" data-name="Miya" data-description="Miya é uma atiradora:
+                Miya divide seu ataque básico em duas flechas, causando (+ 105% de Ataque Físico Total) pontos de dano Físico ao alvo principal e 30% de seu dano normal ao outro alvo. Dura 4 segundos.
+                Miya atira uma saraivada de flechas em direção a uma área, causando 5 hits de dano aos inimigos. Cada acerto causa (+ 15% de Ataque Físico Total) pontos de Dano Físico. As flechas retardam os inimigos, congelando-os por 1 segundo no 4º hit
+                Miya remove todos os seus efeitos e se torna invisível por 1,5 segundos, aumentando sua velocidade de ataque em 35% / 50% / 65% por 6 segundos e velocidade de movimento em 45% por 1,5 segundos.
+                Cada vez que um ataque básico atinge um alvo, a velocidade de ataque de Miya é aumentada em 5%. Últimos 4 segundos. Empilha até 8 vezes.">
+                    <img src="./card-miya.jpg" alt=" Personagem Miya">
+                </li>
+
+                <li class="personagem" id="beatrix" data-name="Beatrix" data-description="Beatrix é uma atiradora:
+                Empunha a arma, mirando no inimigo. Usar a habilidade causa 700 (+250% ataque físico total) de dano físico ao primeiro inimigo atingido. No último nível a habilidade causa 1200 de dano físico.
+                Beatrix concentra sua fúria, fazendo Bennett causar um bombardeio numa área definida cinco vezes. Cada bombardeio desacelera o alvo em 30% e causa 685 (+225% ataque físico total) de dano físico durante 1s. No último nível a habilidade causa 1025 de dano físico.
+                Beatrix levanta Wesker e dispara ultra balas que causam 295 (+110% ataque físico total) de dano físico a cada vez que atingem um inimigo. Acertar o mesmo alvo várias vezes reduz o dano em 25%, mas não ficará abaixo de 25% do dano base. No último nível a habilidade causa 445 de dano físico.
+                Beatrix aperta o gatilho para receber os inimigos que se aproximem com uma rajada de seis tiros, que causam 225 (+60% ataque físico total) de dano físico a cada acerto. No último nível a habilidade causa 315 de dano físico.">
+                    <img src="./card-beatrix.jpg" alt=" Personagem Beatrix">
+                </li>
+
+                <li class="personagem" id="hilda" data-name="Hilda" data-description="Hilda é um soldado:
+                Entrar no arbusto lhe dará um escudo que absorve uma quantidade de dano igual a 10% de seu HP máximo, com duração de 5 s. Quando o HP da Hilda cai abaixo de 30%, ela pode obter uma grande regeneração HP..
+                Ativa o poder rúnico da grande espada, aumentando em 60% a velocidade de movimento da própria Hilda por 3s. Além disso, aumentará o dano causado no próximo ataque básico de dano físico para o alvo e diminui a velocidade. O inimigo por trás do alvo receberá dano físico.
+                Bloqueia um alvo inimigo por perseguição, habilidade pode ser liberada 3 vezes no máximo, o 2º ataque causará dano ao entorno do alvo, o 3º ataque derrubará alvo e inimigos próximos temporariamente, cada vez causando dano físico.
+                Hilda pula em direção ao alvo e corta poderosamente, causando dano físico ao alvo e temporariamente atordoando o alvo, ao mesmo tempo causando  dano físico às unidades inimigas ao redor do alvo. Cada kill ou ou assist irá aumentar o dano físico da skill. Quando a camada máxima for atingida, o dano aos inimigos aumentará mais.">
+                    <img src="./card-hilda.jpg" alt=" Personagem Hilda">
+                </li>
+
+                <li class="personagem" id="esmeralda" data-name="Esmeralda" data-description="Esmeralda é uma maga/tank:
+                Seus ataques e habilidades básicas causa dano duas vezes. O Pó Estelar causa Dano Físico e a Lua de Gelo causa Dano Mágico e dá ao alvo um escudo igual a 150% do dano causado. O dano ignora todos os efeitos de escudo e, transforma seu escudo em seu próprio HP.
+                Ela gera 350 (+100% Poder Mágico Total) pontos de escudo para si e aumenta sua velocidade de movimento em 40%. Ela gradualmente transforma os escudos de seus inimigos próximos em seu próprio escudo.
+                Ativa Poeira Estelar e Lua Gelada e faz com que 210 (+60% Ataque Físico Total) pontos de dano físico e 210 (+90% Poder Mágico Total) pontos de dano mágico para inimigos próximos. Causar dano aos inimigos reduz o tempo de recarga do Escudo da Lua de Gelo em 1 segundo.
+                Canaliza o poder dos Céus em suas duas armas. Quanto maior a duração da habilidade, maior será o poder infligido. Use esta habilidade para lançar a Poeira Estelar para o local designado, causando 350 (+90 Ataque Físico Total) pontos de Dano Físico, e então Esmeralda move-se para o local designado para conjurar a Lua de Gelo, causando 350 (+140% Poder Mágico Total) pontos de Dano Mágico e imobilizando inimigos em área por 1.2s.">
+                    <img src="./card-esmeralda.jpg" alt=" Personagem Esmeralda">
+                </li>
+
+                <li class="personagem" id="freya" data-name="Freya" data-description="Freya é um soldado:
+                Uma das habilidades passivas da personagem é o “Contato Espiritual”, que gera um tipo de campo de força sagrado em volta de Freya, depois que ela sofre 2 ataques. Ao acumular três desses orbes, ela passa a causar dano nos inimigos, os quais ela toca.
+                Com as “Asas da Fé”, a personagem se transporta para uma determinada região selecionada, causando 240 de dano e puxando os adversários para o meio. E com o “Corte Veloz”, ela ganha maior velocidade para atacar nos seus primeiros ataques, sendo que no terceiro, ela causa um atordoamento nos inimigos com 180 de dano.
+                Ao entrar em seu estado de “Valquíria”, a personagem Freya em Mobile Legends, causa 360 de dano físico nos adversários que estiverem por perto e ainda os deixa mais lento. Além disso, os seus ataques também ficam mais poderosos, aumentando o nível para 20 e 15 para sua defesa e poder de magia.">
+                    <img src="./card-freya.jpg" alt=" Personagem Freya">
+                </li>
+
+                <li class="personagem" id="masha" data-name="Masha" data-description="Masha é um soldado/tank:
+                Ela tem três barras de vida e a cada vez que perde uma fica imune ao próximo Dano, cada vez que ela perde 1% da sua vida, sua velocidade de ataque aumenta em 1.2%.
+                Desperta seu poder selvagem aumentando sua velocidade de movimento em 30% e causando dano físico igual a 3.5% da vida máxima do alvo com ataques básicos, e a cada um segundo perdera 0.8% do seu HP enquanto poder selvagens tiver despertado.
+                Masha dá um rugido para frente que deixa os seus inimigos 40% mais lentos por um segundo e desarmados por 2, o efeito do desarmamento passa após 2 segundos ou se o inimigo pegar sua arma que estará jogada no chão, esse ataque causa 200 (mais 100% de ataque físico total).
+                Masha se lança no inimigo após perder 50% do seu HP atual. Quando ela chegar perto do alvo lançará o barulho do trovão que causará 15%(mais 100% de ataques físico) do HP atual do inimigo deixando com lentidão de 90% e dura 0.5s.">
+                    <img src="./card-masha.jpg" alt=" Personagem Masha">
+                </li>
+
+                <li class="personagem" id="natalia" data-name="Natalia" data-description="Natalia é uma assassina:
+                A passiva de Natalia tem duas funções diferentes. A primeira é que se você ficar num arbusto por mais de dois segundos você ficará invisível, mas ao chegar perto de inimigos eles serão alertados com uma exclamação acima de seu personagem. A passiva dela também concede uma taxa de crítico maior, caso acerte seus inimogos pelas costas.
+                Ela avança com um dash, causando uma pequena quantia de dano. Caso ela acerte inimigos ou minions, Natalia poderá acionar a habilidade novamente. 
+                Conjura uma bomba de fumaça, caso esteja dentro dela ela ficará imune a ataques básicos e terá sua velocidade de ataque aumentada. Além disso, a fumaça causa lentidão aos inimigos que passarem por ela. 
+                Natalia faz vários ataques numa pequena área em sua frente, causando dano e lentidão aos adversários que foram acertados pela habilidade.">
+                    <img src="./card-natalia.jpg" alt=" Personagem Natalia">
+                </li>
+
+                <li class="personagem" id="fanny" data-name="Fanny" data-description="Fanny é uma assassina:
+                De acordo com a velocidade de vôo, o dano de Fanny durante o vôo pode aumentar em 15% a 30% e deixará uma marca de presa no alvo que pode acumular até 2 vezes. Causar dano aos inimigos com as marcas de presa irá gerar energia para Fanny (10 por pilha). 
+                Gira sua lâmina, causando 260 (+ 90% de ATK Físico Total). Dano Físico para inimigos próximos.
+                Joga um cabo que a atrai para o primeiro obstáculo que atinge. Cada uso sucessivo dentro de 3 s diminuirá o custo de mana 1. Se a energia for suficiente, o Tornado Strike será acionado.
+                Inicia um ataque a um inimigo, causando 500 (+ 240% de dano físico extra) de dano físico . Se atingir um inimigo com um marcador de prey, o dano aumentará em 20% por stack.">
+                    <img src="./card-fanny.jpg" alt=" Personagem Fanny">
+                </li>
+
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./aurora.jpg" alt="Personagem Selecionado">
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Personagens</h2>
+                <p class="descricao-personagem" id="descricao-personagem"></p>
+            </h2>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+
+    <footer class="rodape">&copy; Criado e Desenvolvido por Adna Backman</footer>
+</body>
+</html>
